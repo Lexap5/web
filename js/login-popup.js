@@ -1,5 +1,4 @@
 const loginButton = document.querySelector('.login-button');
-const loginPopup = document.querySelector('.login-popup');
 const overlay = document.querySelector('.overlay');
 const closeButton = document.querySelector('.popup-close');
 
