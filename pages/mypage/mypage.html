@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mypage.css">
+    <script defer src="../../js/login-popup.js"></script>
+    <title>Обо мне)</title>
+  </head>
+  <body class="root">
+    <header class="header">
+      <a class="logo" href="#">
+        <img class="site-logo" src="../../images/logo.svg" alt="Логотип">
+      </a>
+      <ul class="site-menu">
+        <li class="heading">
+          <a class="menu-link" href="../../index.html">Главная</a>
+        </li>
+        <li class="heading">
+          <a class="menu-link" href="../students/students.html">Студенты</a>
+        </li>
+        <li class="heading">
+          <a class="menu-link" href="../about/about.html">О курсе</a>
+        </li>
+        <li class="heading">
+          <a class="menu-link" href="../contacts/contacts.html">Контакты</a>
+        </li>       
+      </ul>
+      <button class="login-button">Войти</button> 
+      <div class="overlay">
+         <div class="popup">
+            <img src="../../images/close.svg" alt="иконка закрытия" class="popup-close">
+            <h2 class="popup-title">Войти на сайт</h2>
+            <form class="login-form" action="" metod="GET">
+            <input class="login-input" name="login" type="text" placeholder="Логин" required="">
+            <input class="password-input" name="password" type="password" placeholder="Пароль" required="">
+            <button class="login-button" type="submit">Войти</button></form>
+         </div>  
+      </div>
+    </header>
+    <main class="main">     
+      <h1><strong>Кто я? и чем увлекаюсь</strong></h1>
+      <p><em>Я простой человек со своими интересами и увлечениями.</em></p>  
+      <h2>Спорт, который я люблю.</h2>
+      <ul>
+      <li><h3>Футбол</h3></li>
+      <p>Моя страсть с ранних лет. Обожаю все, что связано с этой игрой.</p>
+      <li><h3>Волейбол</h3></li>
+      <p>С детства эта игра у меня ассоциируется с морем, солнцем и беззаботными днями</p>
+      <li><h3>Шахматы</h3></li>
+      <p>А что? Тоже спорт, хотя я в них не так силен.</p>
+      </ul>
+      <h2>Сайты, которые мне нравятся:</h2>
+      <p>конечно же это <a href="https://yandex.ru">Яндекс</a></p>
+      <p>и естественно <a href="google.ru">Google</a></p>   
+      <h2>И конечно же котик</h2>
+      <p><q>Какая все-таки милота)... Ну и лес</q></p>  
+      <img src="https://mobimg.b-cdn.net/v3/fetch/fe/fe22186dba2df35f07573604aa8a0e63.jpeg"
+       width="300" height="300" alt="котик">
+     <img class="forest" src="../../images/park.jpg" width="300" height="200" alt="лес"> 
+     <object class="wifi" data="../../images/wifi.svg" type="image/svg+xml"></object>  
+     <h3>Список для ЗОЖ</h3>
+      <ol class="food">
+       <li>Гречка</li>
+       <li>Куриное филе</li>
+       <li>Макароны</li>
+      </ol>  
+     <h3>Купить продукты</h3>
+      <ul class="food">
+       <li>Кола</li>
+       <li>Чипсы</li>
+       <li>Шоколад</li>
+      </ul>  
+     <h3>Лучшие игроки</h3>
+     <table class="players">
+      <tr style="background-color: rgb(193, 45, 45);">
+        <th>Номер</th>
+        <th>Фамилия</th>
+        <th>Очки</th>
+      </tr>
+      <tr>
+        <th>10</th>
+        <td>Иванов</td>
+        <td rowspan="2">9</td>
+      </tr>
+      <tr>
+        <th>16</th>
+        <td>Петров</td>
+            </tr>
+      <tr>
+        <th>5</th>
+        <td>Сидоров</td>
+              <td>6</td>
+            </tr>
+     </table>  
+     <h2>Вам нравится мой сайт?</h2>  
+    <form class="form" action="" metod="get">
+     <label for="name">Ваше имя</label>
+     <input class="name-input" id="name" type="text" name="name" required placeholder="Имя">
+     <label for="email">Почта</label>
+     <input class="name-input" id="email" type="email" name="emai" required placeholder="email@mail.ru">  
+     <fieldset>
+     <legend>Чего не хватает на сайте?</legend>
+     <label for="pictures">Картинок</label>
+     <input id="pictures" type="checkbox" name="info" value="pictures">
+     <label for="fan">Юмора</label>
+     <input id="fan" type="checkbox" name="info" value="fun">
+     <label for="design">Дизайна</label>
+     <input id="design" type="checkbox" name="info" value="design">
+    </fieldset>  
+    <fieldset>
+     <legend>Нравится ли вам сайт?</legend>
+     <label for="yes">Да</label>
+     <input id="yes" type="radio" name="choise" value="yes">
+     <label for="no">Нет</label>
+     <input id="no" type="radio" name="choise" value="no">
+    </fieldset>
+     <textarea name="text" id="text" cols="30" rows="10" placeholder="Подробное мнение"></textarea>
+     <input type="color" name="color" id="">  
+    <button type="submit">Отправить</button>  
+    </form>
+  </main>
+    <footer class="footer">
+      <p class="copywrite">2022 &copy;
+        <a class="innopolis-link" target="_blank" href="https://innopolis.com">Иннополис</a>
+      </p>
+    </footer>
+  </body>
+</html>
