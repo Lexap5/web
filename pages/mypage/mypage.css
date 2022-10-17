@@ -300,18 +300,25 @@
     box-sizing: border-box; 
 }
 
-.photo-ya {    
+.photo-ya {
+    position: relative;  
+    margin:0 auto; 
     height: 440px;
     width: 280px;
-    border-radius: 8px;
-    background: url(../../images/ya.png);     
+    margin-left: 50px; 
+    margin-right: 30px;         
+}
+  
+.photo-ya img {  
+    position: absolute;   
+    border-radius: 8px;  
 }
 
-.photo-ya:hover {  
-    transition: all 3s ease;
-    border-radius: 8px;
-    background: url(../../images/ya2.jpg);
+.photo-ya img.ya_black:hover { 
+    opacity:0;      
+    transition: all 2.5s ease; 
 }
+
 .class-center-em {
     list-style: none;    
 } 
@@ -340,7 +347,7 @@
     color: rgba(255,255,255,0.5);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
     .main {
         box-sizing: border-box;
         padding: 0 2vw;
