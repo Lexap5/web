@@ -410,5 +410,8 @@
         top: -30px;
         right: 0px;
     }
+    .text-ul {
+       padding: 0; 
+    }
 }
 
